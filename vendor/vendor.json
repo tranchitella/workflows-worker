@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "QRddR3ybj/QMQR2qzwaE7s+CtXo=",
+			"path": "github.com/mendersoftware/mendertesting",
+			"revision": "6efb8875d722885ca968c53dd3c68b3b76d724c1",
+			"revisionTime": "2020-02-26T09:47:33Z"
+		}
+	],
+	"rootPath": "github.com/mendersoftware/workflows-worker"
+}
