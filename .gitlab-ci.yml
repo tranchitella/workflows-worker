@@ -1,5 +1,7 @@
+variables:
+  DOCKER_REPOSITORY: mendersoftware/workflows-worker
+
 stages:
-  - test_prep_build
   - test_prep
   - test
   - build
@@ -7,11 +9,9 @@ stages:
 
 include:
   - project: 'Northern.tech/Mender/mendertesting'
-    file: '.gitlab-ci-check-golang-static.yml'
-  - project: 'Northern.tech/Mender/mendertesting'
     file: '.gitlab-ci-check-golang-unittests.yml'
   - project: 'Northern.tech/Mender/mendertesting'
-    file: '.gitlab-ci-check-golang-dockerimage.yml'
+    file: '.gitlab-ci-check-docker-build.yml'
 
 test:unit:
   image: golang:1.13
